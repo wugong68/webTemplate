@@ -47,6 +47,17 @@ namespace WebApplication1.Controllers
             return View();
         }
 
+        public async Task<IActionResult> Ro(string module = "a")
+        {
+            this.ViewBag.module = module;
+
+            var from = await FromClient();
+
+            this.ViewBag.d = from;
+
+            return View();
+        }
+
         [NonAction]
         public async Task<Hashtable> FromClient()
         {

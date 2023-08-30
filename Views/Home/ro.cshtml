@@ -1,0 +1,112 @@
+﻿@{
+    Layout = null;
+}
+
+@*
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    组件模板页面访问
+    http://www.layui-vue.com/zh-CN/components/button
+*@
+@{
+    Layout = null;
+    System.Collections.Hashtable ddd = ViewBag.d;
+    var title = "";
+    if (ddd.ContainsKey("htmltitle"))
+    {
+        title = ddd["htmltitle"].ToString();
+    }
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        @title
+    </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="~/realib/umd/reset.css" rel="stylesheet" />
+
+
+
+    <script src="~/realib/react.development.js"></script>
+    <script src="~/realib/react-dom.development.js"></script>
+    <script src="~/realib/babel.min.js"></script>
+    <script src="~/realib/dayjs.min.js"></script>
+    <script src="~/realib/umd/antd.min.js"></script>
+    <script src="~/realib/umd/antd-with-locales.min.js"></script>
+
+    <script src="~/realib/axios.min.js"></script>
+    <script src="~/realib/echarts.min.js"></script>
+</head>
+<body>
+
+    <div id="app">
+    </div>
+    <style>
+        .container-demo {
+            width: 100%;
+            min-height: 500px;
+            /*background: #eee;*/
+        }
+
+        .card-container {
+            background: whitesmoke;
+            padding: 8px;
+        }
+
+        .form-item-mg {
+            margin-bottom: 0px !important;
+        }
+    </style>
+
+    <style id="ocss" type="text/css"></style>
+
+    <script>
+        //get请求
+        function get(url) { return axios.get(url) }
+        //post请求
+        function post(url, data, config) { return axios.post(url, data, config) }
+        /*
+            比如浏览器请求：
+                http://xxx/po?module=a&a=100
+            js取得a方式：
+               from() == {module:a,a:100}
+        */
+        function from() { return @Json.Serialize(ViewBag.d) }
+        /*
+            id 是 html的id标签值
+            option 是echart 的参数
+        */
+        function Echart(id, option) {
+            let Chart = echarts.init(document.getElementById(id));
+            Chart.clear();
+            Chart.setOption(option);
+        }
+        //设置css样式
+        function ocss(s) {
+       
+            if (s) document.getElementById("ocss").innerHTML = s;
+        }
+    </script>
+
+    <script type="text/babel" src="/realib/module/@(this.ViewBag.module).js">
+    </script>
+
+    <script type="text/babel">
+         console.log(React)
+         //console.log(ReactDOM)
+         //console.log(App)
+         //console.log(antd)
+         try{
+             ocss(css) @* setup css from ”@(this.ViewBag.module).js“ *@
+         }catch{}
+
+        const root = ReactDOM.createRoot(document.getElementById("app"));
+        root.render(<App/>);
+    </script>
+</body>
+</html>

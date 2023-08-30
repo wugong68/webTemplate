@@ -245,6 +245,50 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\axios.min.js",
+      "PackagePath": "staticwebassets\\realib\\axios.min.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\babel.min.js",
+      "PackagePath": "staticwebassets\\realib\\babel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\dayjs.min.js",
+      "PackagePath": "staticwebassets\\realib\\dayjs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\echarts.min.js",
+      "PackagePath": "staticwebassets\\realib\\echarts.min.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\module\\a.js",
+      "PackagePath": "staticwebassets\\realib\\module\\a.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\module\\demo-query.js",
+      "PackagePath": "staticwebassets\\realib\\module\\demo-query.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\react-dom.development.js",
+      "PackagePath": "staticwebassets\\realib\\react-dom.development.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\react.development.js",
+      "PackagePath": "staticwebassets\\realib\\react.development.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\umd\\antd-with-locales.min.js",
+      "PackagePath": "staticwebassets\\realib\\umd\\antd-with-locales.min.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\umd\\antd.min.js",
+      "PackagePath": "staticwebassets\\realib\\umd\\antd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\realib\\umd\\reset.css",
+      "PackagePath": "staticwebassets\\realib\\umd\\reset.css"
+    },
+    {
       "Id": "C:\\Users\\H\\source\\repos\\WebApplication1\\wwwroot\\vuelib\\axios.min.js",
       "PackagePath": "staticwebassets\\vuelib\\axios.min.js"
     },
