@@ -10,3 +10,4 @@
 这个模板使用场景不多，但在特定场合很合适
 
 
+在首页点击 click here 和 Rclick here
