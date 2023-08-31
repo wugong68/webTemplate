@@ -6,7 +6,7 @@
 const html = `
 
     <lay-button @click="increment" >
-       hello {{ message }}
+       hello {{ message }} 
     </lay-button >
 
 `
