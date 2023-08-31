@@ -32,6 +32,14 @@ function App() {
         message.info("hello")
     }
 
+    useEffect(() => {
+        console.log("gb",txt)
+    }, [txt])
+
+    useEffect(() => {
+        console.log("first")
+    },[])
+
     const changedate = (date, dateString) => {
         console.log(date,"select your time", dateString);
     };
