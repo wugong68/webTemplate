@@ -11,7 +11,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Jint" Version="3.0.0-beta-2052" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="6.0.1" />
+    <PackageReference Include="SqlSugarCore" Version="5.1.4.107-preview02" />
   </ItemGroup>
 
 </Project>
